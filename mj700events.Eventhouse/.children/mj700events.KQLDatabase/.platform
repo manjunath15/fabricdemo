@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "mj700events",
+    "description": "mj700events"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ca89bade-e6a3-8ac7-418b-eb4328e3f118"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "17c1bbfa-09cc-4d8f-8b65-aa461c612c03",
+      "name": "new-source",
+      "type": "SampleData",
+      "properties": {
+        "type": "StockMarket"
+      }
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "id": "8d8701a3-f242-4ca5-9dca-d283a75295c6",
+      "name": "new_eventstream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": []
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}

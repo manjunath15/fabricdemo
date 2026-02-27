@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "koreorders"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1545d518-4892-babd-4fa0-772b25b78b2d"
+  }
+}

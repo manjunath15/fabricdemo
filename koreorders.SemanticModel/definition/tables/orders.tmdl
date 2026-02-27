@@ -1,0 +1,102 @@
+table orders
+	lineageTag: 41241918-bf2a-4022-9f07-7673fed50432
+	sourceLineageTag: [dbo].[orders]
+
+	column SalesOrderID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7d216b99-38b7-41ae-bf39-7cbe5db6a0ee
+		sourceLineageTag: SalesOrderID
+		summarizeBy: count
+		sourceColumn: SalesOrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 192f77d5-6fa7-4bd7-9f05-fb20e786c918
+		sourceLineageTag: OrderDate
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 89b58906-697b-495e-8a0f-d437e546a8d2
+		sourceLineageTag: CustomerID
+		summarizeBy: count
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LineItem
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 3cccf3a7-3ff0-4c93-aedd-5003590c1d64
+		sourceLineageTag: LineItem
+		summarizeBy: sum
+		sourceColumn: LineItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 833be91f-01dc-48ab-93d9-04bd2b35bf7c
+		sourceLineageTag: ProductID
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderQty
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 20d60aa6-3348-43e3-b40a-d64ac4d3b3c4
+		sourceLineageTag: OrderQty
+		summarizeBy: sum
+		sourceColumn: OrderQty
+
+		annotation SummarizationSetBy = Automatic
+
+	column LineItemTotal
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e789c9fd-1517-4e6e-85d9-b6f15c8cf586
+		sourceLineageTag: LineItemTotal
+		summarizeBy: sum
+		sourceColumn: LineItemTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MonthNo
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e435e547-3988-4fe6-bad3-aa929efb9b89
+		sourceLineageTag: MonthNo
+		summarizeBy: sum
+		sourceColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition orders = entity
+		mode: directLake
+		source
+			entityName: orders
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

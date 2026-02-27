@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "9883c65f-4a3d-426f-a069-26f760f1b3a5",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "AssetId",
+        "targetPropertyId": "3311936186252671928"
+      },
+      {
+        "sourceColumnName": "SiteId",
+        "targetPropertyId": "3311936177798353030"
+      },
+      {
+        "sourceColumnName": "AssetName",
+        "targetPropertyId": "3311936178733370378"
+      },
+      {
+        "sourceColumnName": "SerialNumber",
+        "targetPropertyId": "3311936179462649886"
+      },
+      {
+        "sourceColumnName": "MaintenanceStatus",
+        "targetPropertyId": "3311936180564373200"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "023da3c9-ded0-4e94-8349-2500d1abfcba",
+      "itemId": "92c8792c-0e40-4abe-b012-2410e6d9000b",
+      "sourceTableName": "assets",
+      "sourceSchema": "dbo"
+    }
+  }
+}

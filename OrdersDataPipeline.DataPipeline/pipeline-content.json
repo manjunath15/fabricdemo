@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "SalesOrderDataflow",
+        "type": "RefreshDataflow",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": "fa361d69-ac47-4ddd-9e38-61fbb64231c2",
+          "workspaceId": "d390287d-9b9b-49de-b411-94cefab25f5e",
+          "notifyOption": "NoNotification",
+          "dataflowType": "DataflowFabric"
+        }
+      }
+    ]
+  }
+}
